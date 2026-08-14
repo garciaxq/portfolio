@@ -17,3 +17,22 @@
 .project-actions small{color:#8290a2;font-size:10px;line-height:1.45}
 .project-demo-button{min-width:190px;padding:12px 18px}
 @media(max-width:680px){.project-actions{grid-template-columns:1fr}.project-demo-button{width:100%}}
+
+/* Ajustes para uma apresentação mais pessoal e direta */
+.human-card{position:relative;overflow:hidden;max-width:460px;margin-left:auto;padding:38px;border:1px solid rgba(255,255,255,.13);border-radius:26px;background:linear-gradient(145deg,#121c2b,#0b121e);box-shadow:0 40px 90px rgba(0,0,0,.28)}
+.human-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-90px;top:-90px;background:var(--accent);filter:blur(75px);opacity:.09}
+.human-card-kicker{margin:0 0 15px;color:var(--accent);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em}
+.human-card h2{position:relative;margin:0;font:600 30px/1.15 var(--display);letter-spacing:-.035em}
+.human-card-copy{position:relative;margin:18px 0 26px;color:#aab6c6;font-size:14px;line-height:1.7}
+.work-method{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.work-method li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}
+.work-method>li>span{color:var(--accent);font:600 10px var(--display)}
+.work-method div{display:flex;flex-direction:column;gap:3px}
+.work-method strong{font:600 13px var(--display)}
+.work-method small{color:#7f8da1;font-size:11px;line-height:1.45}
+.human-card-note{display:flex;align-items:center;gap:12px;margin-top:22px;padding:14px;border-radius:12px;background:rgba(86,214,160,.055);border:1px solid rgba(86,214,160,.14)}
+.human-card-note div{display:flex;flex-direction:column}.human-card-note small{color:#8290a2;font-size:9px}.human-card-note strong{font:600 11px/1.4 var(--display)}
+.projects-grid{grid-template-columns:1fr;max-width:920px}
+.project-featured{grid-row:auto;min-height:auto}
+@media(max-width:900px){.human-card{margin:auto;max-width:540px}.projects-grid{max-width:none}}
+@media(max-width:680px){.human-card{padding:27px 22px}.human-card h2{font-size:26px}.human-card-copy{font-size:13px}}
