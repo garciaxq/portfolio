@@ -12,15 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20260814.1" />
+    <script src="script.js?v=20260811.2" defer></script>
   </head>
-  <body>
+  <body id="inicio">
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <div class="ambient ambient-one" aria-hidden="true"></div>
     <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <header class="site-header" id="inicio">
+    <header class="site-header">
       <nav class="nav container" aria-label="Navegação principal">
         <a class="brand" href="#inicio" aria-label="Início">
           <span class="brand-mark">VG</span>
@@ -43,7 +43,7 @@
         <div class="hero-copy reveal">
           <div class="eyebrow"><span></span> Disponível para novos desafios</div>
           <p class="hero-kicker">Olá, eu sou o Victor.</p>
-          <h1 id="hero-title">Transformo problemas técnicos em <em>soluções claras.</em></h1>
+          <h1 id="hero-title">Tecnologia aplicada para simplificar processos e <em>gerar resultados.</em></h1>
           <p class="hero-description">
             Analista de Suporte N2 e estudante de Sistemas de Informação, com experiência em SQL, PostgreSQL, sistemas ERP/PDV, processos fiscais e infraestrutura.
           </p>
@@ -60,7 +60,7 @@
 
         <div class="portrait-wrap reveal" aria-label="Painel com áreas de atuação de Victor Garcia">
           <div class="tech-frame">
-            <div class="terminal-bar"><span></span><span></span><span></span><small>victor@portfolio</small></div>
+            <div class="terminal-bar"><span></span><span></span><span></span><small>perfil.js</small></div>
             <div class="terminal-content" aria-hidden="true">
               <p><i>01</i><span class="code-muted">// perfil profissional</span></p>
               <p><i>02</i><span class="code-blue">const</span> profissional = {</p>
@@ -73,22 +73,24 @@
               <p><i>09</i>&nbsp;&nbsp;status: <span class="code-green">"evoluindo"</span></p>
               <p><i>10</i>};</p>
             </div>
-            <div class="tech-badge"><span>VG</span><small>ANALISTA • DEV • DADOS</small></div>
-          </div>
-          <div class="floating-card card-role">
-            <span class="status-dot"></span>
-            <div><small>Atualmente</small><strong>Analista de Suporte N2</strong></div>
-          </div>
-          <div class="floating-card card-study">
-            <small>Formação</small><strong>Sistemas de Informação</strong><span>UNIUBE</span>
+            <div class="tech-meta">
+              <div class="meta-item">
+                <span class="status-dot"></span>
+                <div><small>Atualmente</small><strong>Analista de Suporte N2</strong></div>
+              </div>
+              <div class="meta-item">
+                <small>Formação</small><strong>Sistemas de Informação</strong><span>UNIUBE</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="ticker" aria-label="Tecnologias e competências">
         <div class="ticker-track">
-          <span>SQL</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Python</span><i>✦</i><span>Java</span><i>✦</i><span>ERP & PDV</span><i>✦</i><span>Redes</span><i>✦</i><span>Suporte N2</span><i>✦</i>
-          <span aria-hidden="true">SQL</span><i aria-hidden="true">✦</i><span aria-hidden="true">PostgreSQL</span><i aria-hidden="true">✦</i><span aria-hidden="true">Python</span><i aria-hidden="true">✦</i><span aria-hidden="true">Java</span><i aria-hidden="true">✦</i><span aria-hidden="true">ERP & PDV</span><i aria-hidden="true">✦</i><span aria-hidden="true">Redes</span><i aria-hidden="true">✦</i><span aria-hidden="true">Suporte N2</span><i aria-hidden="true">✦</i>
+          <div class="ticker-group">
+            <span>SQL</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Python</span><i>✦</i><span>Java</span><i>✦</i><span>ERP & PDV</span><i>✦</i><span>Redes</span><i>✦</i><span>Suporte N2</span><i>✦</i>
+          </div>
         </div>
       </section>
 
@@ -141,21 +143,30 @@
         <p class="projects-intro reveal">Este portfólio vai crescer junto comigo. Abaixo estão as frentes que serão transformadas em projetos completos, com código, documentação e demonstrações.</p>
         <div class="projects-grid">
           <article class="project-card project-featured reveal">
-            <div class="project-top"><span class="tag tag-accent">Em desenvolvimento</span><span class="project-index">01</span></div>
-            <div class="project-visual visual-data" aria-hidden="true"><span></span><span></span><span></span><span></span><div>SQL</div></div>
-            <h3>Central de Consultas SQL</h3>
-            <p>Biblioteca organizada de consultas PostgreSQL para diagnóstico, validação e apoio a rotinas de suporte em sistemas ERP.</p>
-            <div class="project-tech"><span>PostgreSQL</span><span>SQL</span><span>Documentação</span></div>
+            <div class="project-top"><span class="tag tag-accent">Projeto em destaque</span><span class="project-index">01</span></div>
+            <div class="project-visual nexafin-visual" aria-hidden="true">
+              <div class="nexa-head"><b>N</b><strong>NexaFin</strong><small>Visão demonstrativa</small></div>
+              <div class="nexa-balance"><small>Saldo disponível</small><strong>R$ 12.480,90</strong><span>+8,4% no mês</span></div>
+              <div class="nexa-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="nexa-stats"><div><small>Receitas</small><strong>R$ 8.920</strong></div><div><small>Despesas</small><strong>R$ 4.310</strong></div></div>
+            </div>
+            <h3>NexaFin — Gestão Financeira Inteligente</h3>
+            <p>Aplicação web de controle financeiro pessoal com receitas, despesas, saldos, pendências, gráficos e acompanhamento de financiamentos em uma interface responsiva.</p>
+            <div class="integration-note"><strong>Integração com o Asaas</strong><span>Criação do acesso vinculado ao e-mail e checkout seguro com Pix ou cartão. Os dados do pagamento são processados pelo Asaas e não ficam armazenados no NexaFin.</span></div>
+            <div class="project-process"><span><b>01</b> Cadastro e autenticação</span><span><b>02</b> Controle e gráficos</span><span><b>03</b> Checkout Asaas</span></div>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Asaas</span><span>Vercel</span><span>UX responsiva</span></div>
+            <div class="project-actions">
+              <a class="button button-primary project-demo-button" href="https://nexafin.vercel.app/demo" target="_blank" rel="noreferrer" aria-label="Testar demonstração do NexaFin com dados fictícios">Testar demonstração <span aria-hidden="true">↗</span></a>
+              <small>Ambiente seguro, com dados fictícios e alterações temporárias.</small>
+            </div>
           </article>
           <article class="project-card reveal">
-            <div class="project-top"><span class="tag">Próximo projeto</span><span class="project-index">02</span></div>
-            <div class="project-icon">&gt;_</div><h3>Toolkit de Suporte</h3><p>Scripts e automações para agilizar diagnósticos no Windows, rede e ambiente de atendimento.</p>
-            <div class="project-tech"><span>Python</span><span>PowerShell</span></div>
+            <div class="project-top"><span class="tag">Em breve</span><span class="project-index">02</span></div>
+            <div class="project-icon">+</div><h3>Novo projeto em breve</h3><p>Este espaço receberá um novo projeto com apresentação completa, tecnologias utilizadas e detalhes do desenvolvimento.</p>
           </article>
           <article class="project-card reveal">
-            <div class="project-top"><span class="tag">Roadmap</span><span class="project-index">03</span></div>
-            <div class="project-icon">▥</div><h3>Dashboard Operacional</h3><p>Painel de indicadores para transformar dados de suporte em informações claras para tomada de decisão.</p>
-            <div class="project-tech"><span>Dados</span><span>BI</span><span>UX</span></div>
+            <div class="project-top"><span class="tag">Em breve</span><span class="project-index">03</span></div>
+            <div class="project-icon">...</div><h3>Mais novidades em breve</h3><p>Novas soluções serão adicionadas conforme forem desenvolvidas, documentadas e preparadas para demonstração.</p>
           </article>
         </div>
         <div class="github-cta reveal"><div><span class="eyebrow-text">Código aberto</span><h3>Acompanhe minha evolução no GitHub.</h3></div><a class="button button-primary" href="https://github.com/garciaxq" target="_blank" rel="noreferrer">Ver meu GitHub <span aria-hidden="true">↗</span></a></div>

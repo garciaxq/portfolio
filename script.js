@@ -29,3 +29,22 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const tickerTrack = document.querySelector('.ticker-track');
+const tickerGroup = tickerTrack?.querySelector('.ticker-group');
+
+if (tickerTrack && tickerGroup) {
+  const originalItems = [...tickerGroup.children].map((item) => item.cloneNode(true));
+
+  while (tickerGroup.scrollWidth < window.innerWidth + 80) {
+    originalItems.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      tickerGroup.appendChild(clone);
+    });
+  }
+
+  const duplicateGroup = tickerGroup.cloneNode(true);
+  duplicateGroup.setAttribute('aria-hidden', 'true');
+  tickerTrack.appendChild(duplicateGroup);
+}

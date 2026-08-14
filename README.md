@@ -8,8 +8,8 @@ Site responsivo desenvolvido com HTML, CSS e JavaScript, apresentando experiênc
 
 ## Tecnologias
 
-- HTML5 semântico
-- CSS3 responsivo
+- HTML semântico
+- CSS responsivo
 - JavaScript
 - GitHub Pages
 
