@@ -1,24 +1,32 @@
 # Portfólio — Victor Garcia
 
-Portfólio profissional de **Victor Garcia**, Analista de Suporte N2 e estudante de Sistemas de Informação.
+Meu portfólio reúne a experiência em Suporte N2, a graduação em Sistemas de Informação e o NexaFin, meu projeto de gestão financeira pessoal.
 
-## Sobre o projeto
+[Acessar portfólio](https://garciaxq.github.io/portfolio/)
 
-Site responsivo desenvolvido com HTML, CSS e JavaScript, apresentando experiência profissional, competências técnicas, formação e roadmap de projetos.
+## Estrutura
 
-## Tecnologias
+- `index.html`: apresentação, projeto, trajetória e contato.
+- `style.css`: estilos e adaptação para celular.
+- `script.js`: menu móvel, indicação da seção atual e ano do rodapé.
+- `favicon.svg`: ícone do site.
 
-- HTML semântico
-- CSS responsivo
-- JavaScript
-- GitHub Pages
+O site usa HTML, CSS e JavaScript, sem dependências de instalação. A publicação é feita pelo GitHub Pages.
+
+## Executar localmente
+
+Abra `index.html` no navegador ou use um servidor estático na pasta do projeto:
+
+```sh
+python -m http.server 8000
+```
+
+Depois, acesse `http://localhost:8000`.
+
+## Verificação
+
+Ao alterar o site, confira a navegação por teclado, o menu em telas pequenas, os links e o conteúdo com JavaScript desativado. A página respeita a preferência por movimento reduzido.
 
 ## Contato
 
-- [LinkedIn](https://www.linkedin.com/in/victor-garcia-86125b28b/)
-- [GitHub](https://github.com/garciaxq)
-- [E-mail](mailto:victorgarciaxwq@gmail.com)
-
----
-
-Desenvolvido para evoluir continuamente com novos projetos e aprendizados.
+[LinkedIn](https://www.linkedin.com/in/victor-garcia-86125b28b/) · [GitHub](https://github.com/garciaxq) · [E-mail](mailto:victorgarciaxwq@gmail.com)
